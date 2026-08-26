@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ritzy Global.com — a premium modern shopping experience.">
+  <title>Ritzy Global.com | Shop Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">FREE DELIVERY ON ORDERS OVER ₦150,000 <span>•</span> SHOP RITZY GLOBAL</div>
+
+  <header class="site-header">
+    <div class="header-main container">
+      <button class="icon-btn mobile-menu-btn" aria-label="Open menu">☰</button>
+      <a class="logo" href="#">Ritzy<span>Global</span><small>.com</small></a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#new">New Arrivals</a>
+        <a href="#bestsellers">Best Sellers</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <button class="icon-btn" aria-label="Account">♙</button>
+        <button class="icon-btn wishlist-toggle" aria-label="Wishlist">♡<b>0</b></button>
+        <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#new">New Arrivals</a><a href="#bestsellers">Best Sellers</a>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="container search-inner">
+      <input id="searchInput" type="search" placeholder="Search products, categories, brands..." autocomplete="off">
+      <button id="closeSearch" class="icon-btn">×</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <p class="eyebrow">THE RITZY EDIT • 2026</p>
+        <h1>Everyday luxury,<br><em>beautifully curated.</em></h1>
+        <p class="hero-copy">Discover refined pieces selected for modern living — from statement fashion to thoughtful essentials.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#shop">Shop the collection</a>
+          <a class="btn btn-light" href="#categories">Explore categories</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle"></div>
+        <div class="art-card card-one">R</div>
+        <div class="art-card card-two">RITZY<br><small>EDIT</small></div>
+        <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid">
+        <div><strong>Secure checkout</strong><span>Shop with confidence</span></div>
+        <div><strong>Fast delivery</strong><span>Reliable doorstep service</span></div>
+        <div><strong>Easy returns</strong><span>Simple return experience</span></div>
+        <div><strong>Ritzy support</strong><span>We're here when you need us</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="categories">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Shop by category</h2></div>
+        <a href="#shop" class="text-link">View all →</a>
+      </div>
+      <div class="category-grid">
+        <a class="category cat-fashion" href="#shop"><span>Fashion</span><small>Curated style</small></a>
+        <a class="category cat-beauty" href="#shop"><span>Beauty</span><small>Glow essentials</small></a>
+        <a class="category cat-home" href="#shop"><span>Home & Living</span><small>Beautiful spaces</small></a>
+        <a class="category cat-tech" href="#shop"><span>Tech & Gadgets</span><small>Smart essentials</small></a>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="shop">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">OUR PICKS</p><h2>Featured products</h2></div>
+          <a href="#shop" class="text-link">Shop all →</a>
+        </div>
+        <div class="filter-row">
+          <div class="filter-pills">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="fashion">Fashion</button>
+            <button class="filter" data-filter="beauty">Beauty</button>
+            <button class="filter" data-filter="home">Home</button>
+            <button class="filter" data-filter="tech">Tech</button>
+          </div>
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option><option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option><option value="rating">Best Rated</option>
+          </select>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="promo container">
+      <div class="promo-copy"><p class="eyebrow">RITZY WEEKEND</p><h2>Little luxuries.<br>Better prices.</h2><p>Save on selected pieces while the edit lasts.</p><a class="btn btn-primary" href="#shop">Shop offers</a></div>
+      <div class="promo-shape"><span>UP TO<br><strong>30%</strong><br>OFF</span></div>
+    </section>
+
+    <section class="section container" id="new">
+      <div class="section-heading"><div><p class="eyebrow">JUST IN</p><h2>New arrivals</h2></div><a href="#shop" class="text-link">Discover more →</a></div>
+      <div class="mini-feature">
+        <div><p class="eyebrow">THE NEW RITZY EDIT</p><h2>Pieces that make<br>the everyday special.</h2><p>Fresh finds, timeless shapes and modern essentials — selected to fit beautifully into your world.</p><a class="btn btn-dark" href="#shop">Explore new arrivals</a></div>
+        <div class="editorial-art"><div class="editorial-label">RITZY<br><span>GLOBAL</span></div></div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="bestsellers">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">CUSTOMER FAVOURITES</p><h2>Best sellers</h2></div></div>
+        <div class="testimonial"><div class="stars">★★★★★</div><blockquote>“Ritzy Global feels like finding a beautiful little store online. Everything arrived carefully packed and exactly as pictured.”</blockquote><span>— Verified Ritzy customer</span></div>
+      </div>
+    </section>
+
+    <section class="newsletter container">
+      <div><p class="eyebrow">STAY IN THE KNOW</p><h2>Good things, delivered.</h2><p>New drops, exclusive offers and curated finds — straight to your inbox.</p></div>
+      <form id="newsletterForm"><input type="email" required placeholder="Your email address" aria-label="Email address"><button class="btn btn-primary">Subscribe</button></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo footer-logo" href="#">Ritzy<span>Global</span><small>.com</small></a><p>Premium finds for modern living.</p></div>
+      <div><h4>Shop</h4><a href="#shop">All products</a><a href="#categories">Categories</a><a href="#new">New arrivals</a></div>
+      <div><h4>Customer care</h4><a href="#">Shipping & delivery</a><a href="#">Returns</a><a href="#">Contact support</a></div>
+      <div><h4>Ritzy Global</h4><a href="#">About us</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Ritzy Global.com</span><span>Frontend prototype • HTML / CSS / JavaScript</span></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h2>Your cart</h2><button class="icon-btn" id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Your cart is empty.<br>Browse products to find something you love.</p></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartTotal">₦0</strong></div><button class="btn btn-primary full">Proceed to checkout</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
