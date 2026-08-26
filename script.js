@@ -2,7 +2,7 @@ const products = [
   {id:1,name:"Ritzy Signature Tote",category:"fashion",price:85000,old:105000,rating:4.9,badge:"BEST SELLER"},
   {id:2,name:"Botanical Glow Set",category:"beauty",price:42000,old:52000,rating:4.8,badge:"NEW"},
   {id:3,name:"Sculptural Ceramic Vase",category:"home",price:38000,old:null,rating:4.7,badge:"CURATED"},
-  {id:4,name:"Aura Wireless Headphones",category:"tech",price:125000,old:150000,rating:4.9,badge:"SAVE 17%"},
+  {id:4,name:"Aura Wireless Rita ",category:"tech",price:50000,old:450000,rating:4.9,badge:"SAVE 17%"},
   {id:5,name:"Everyday Linen Set",category:"fashion",price:56000,old:null,rating:4.6,badge:"NEW"},
   {id:6,name:"Ritzy Soft Glow Lamp",category:"home",price:69000,old:78000,rating:4.8,badge:"FAVOURITE"},
   {id:7,name:"Silk Touch Beauty Kit",category:"beauty",price:47500,old:null,rating:4.7,badge:"NEW"},
